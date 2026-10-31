@@ -70,9 +70,11 @@ gem 'resque', '~> 2.0.0'
 #gem 'resque-scheduler', '~> 4.3.1'
 gem 'resque-scheduler', git: 'https://github.com/resque/resque-scheduler'
 
+gem 'dotenv-rails', '~> 2.7', require: 'dotenv/rails-now'
+
 gem 'mailgun-ruby', '~>1.1.6'
 
-gem 'groupdate', '~> 4.1.1'
+gem 'groupdate', '~> 5.2'
 gem "chartkick", "~> 3.4.0"
 
 gem 'telegram-bot-ruby', '~> 0.8.6.1'
