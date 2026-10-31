@@ -9,6 +9,6 @@ class Ping < ApplicationRecord
       FROM "pings"
       WHERE "pings"."check_id" = #{check.id}
     }
-    ActiveRecord::Base.connection.exec_query(q).first.to_hash["percentile_cont"]
+    ActiveRecord::Base.connection.exec_query(q).first&.to_hash&.fetch("percentile_cont", nil)
   end
 end

@@ -1,16 +1,16 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.1'
+ruby '>= 2.6.1'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.2'
+# Bundle edge Rails instead: gem 'rails', git: 'https://github.com/rails/rails.git'
+gem 'rails', '5.2.8.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem "sass-rails", "= 5.0.7"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -34,7 +34,7 @@ gem 'turbolinks', '~> 5'
 # gem 'capistrano-rails', group: :development
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+gem "bootsnap", "~> 1.4.9", require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -70,9 +70,20 @@ gem 'resque', '~> 2.0.0'
 #gem 'resque-scheduler', '~> 4.3.1'
 gem 'resque-scheduler', git: 'https://github.com/resque/resque-scheduler'
 
+gem 'dotenv-rails', '~> 2.7', require: 'dotenv/rails-now'
+
 gem 'mailgun-ruby', '~>1.1.6'
 
-gem 'groupdate', '~> 4.1.1'
+gem 'groupdate', '~> 5.2'
 gem "chartkick", "~> 3.4.0"
 
 gem 'telegram-bot-ruby', '~> 0.8.6.1'
+gem "json", "~> 1.8.6"
+gem "mimemagic", "= 0.3.9"
+gem "ffi", "~> 1.16.0"
+gem "bigdecimal", "~> 1.4.2"
+gem "raindrops", "~> 0.20.0"
+gem "kgio", "~> 2.11.0"
+gem "responders", "~> 2.0"
+gem "thor", "~> 1.2.0"
+gem "jquery-ui-rails", "~> 6.0"
