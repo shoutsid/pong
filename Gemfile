@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.1'
+ruby '>= 2.6.1'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+# Bundle edge Rails instead: gem 'rails', git: 'https://github.com/rails/rails.git'
 gem 'rails', '~> 5.2.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
@@ -34,7 +34,7 @@ gem 'turbolinks', '~> 5'
 # gem 'capistrano-rails', group: :development
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+gem "bootsnap", "~> 1.4.9", require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -76,3 +76,9 @@ gem 'groupdate', '~> 4.1.1'
 gem "chartkick", "~> 3.4.0"
 
 gem 'telegram-bot-ruby', '~> 0.8.6.1'
+gem "json", "~> 1.8.6"
+gem "mimemagic", "= 0.3.9"
+gem "ffi", "~> 1.16.0"
+gem "bigdecimal", "~> 1.4.2"
+gem "raindrops", "~> 0.20.0"
+gem "kgio", "~> 2.11.0"
