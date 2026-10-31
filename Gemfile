@@ -4,9 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '>= 2.6.1'
 
 # Bundle edge Rails instead: gem 'rails', git: 'https://github.com/rails/rails.git'
-gem "rails", "6.0.6.1"
+gem "rails", "6.1.7.10"
 # Use postgresql as the database for Active Record
-gem 'pg', '>= 0.18', '< 2.0'
+gem "pg", "~> 1.5.0"
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
@@ -91,3 +91,4 @@ gem "sprockets-rails", "~> 3.4.0"
 gem "globalid", "~> 1.1.0"
 gem "sprockets", "~> 3.7"
 gem "zeitwerk", "~> 2.6.0"
+gem "rake", ">= 12.2"
